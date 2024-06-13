@@ -40,7 +40,7 @@ if st.button("Speak"):
         with open(audio_file, 'rb') as f:
             audio_bytes = f.read()
             st.audio(audio_bytes, format='audio/mp3')
-        
+
         # Provide download link for the audio file
         with open(audio_file, "rb") as f:
             st.download_button(
@@ -51,6 +51,7 @@ if st.button("Speak"):
             )
     else:
         st.warning("Please enter some text to convert to speech.")
+
 
 
 
